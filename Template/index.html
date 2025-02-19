@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Bienvenida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../Static/css/styles.css">
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+  <script>
+    fetch('Navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+  </script>
+  <div class="container">
+    <div class="row">
+      <div style="color: rgb(255, 255, 255); background-color: transparent;">
+        <div class="col-lg-12 text-center">
+          <br />
+          <h1><b><i>Usuario Bienvenidos a tu tienda Los Virtuales</i></b></h1>
+          <hr />
+          <img src="../Static/img/logotipo.jpg" class="img-fluid"
+            alt="Banner Promocional sobre la tienda online de Super Market Sweep" />
+          <br />
+          <br />
+          <h5> La tienda, Los Virtuales es el lugar ideal para los amantes de la tecnología, la informática y los
+            videojuegos. En esta tienda encontrarás todo lo que necesitas para armar, mejorar o reparar tus
+            dispositivos, desde los componentes más básicos hasta los más avanzados. Podrás elegir entre una gran
+            variedad de marcas, modelos y precios, y contar con el asesoramiento de expertos que te ayudarán a encontrar
+            lo que buscas. Los Virtuales te ofrece la mejor calidad, garantía y servicio al cliente, para que disfrutes
+            al máximo de tu experiencia digital. Ven a Los Virtuales y descubre el mundo de las posibilidades que te
+            ofrece la electrónica.<h5>
+              <br />
+              <hr />
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="row justify-content-center" style="align-items: center; ">
+      <div class="col-md-3 mb-2 mb-sm-0">
+        <div class="card">
+          <img src="../Static/img/RTX 3060.jpg" class="card-img-top" alt="NVIDIA 3060">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="color: rgb(255, 255, 255);">NVIDIA 3060</h5>
+            <p class="card-text" style="color: rgb(255, 255, 255); text-align: justify">La tarjeta gráfica NVIDIA
+              GeForce RTX 3060 es una excelente opción para los jugadores que buscan una experiencia de juego fluida y
+              sin interrupciones. Con la arquitectura Ampere de NVIDIA,
+              la RTX 3060 ofrece un rendimiento increíble con núcleos de trazado de rayos mejorados y núcleos tensores,
+              nuevos multiprocesadores de transmisión y memoria G6 de alta velocidad. Además, su diseño de ventilador
+              Torx Twin Fan mantiene la tarjeta fresca y silenciosa incluso durante las sesiones de juego más intensas.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="../Static/img/SDD Sansum 1T.jpg" class="card-img-top" class="img-excluida" alt="SDD Samsung 1T">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="color: rgb(255, 255, 255); text-align: justify">SDD Samsung 1T</h5>
+            <p class="card-text" style="color: rgb(255, 255, 255);text-align: justify"> El disco duro SSD Samsung 1TB es
+              una excelente opción para aquellos que buscan un almacenamiento rápido y confiable. Con velocidades de
+              lectura y escritura secuenciales de hasta 3,500/2,500 MB/s 1, este SSD te brinda un rendimiento
+              sobresaliente y una experiencia de usuario fluida. Además,
+              su diseño compacto y elegante lo hace fácil de transportar y almacenar. El modelo 970 EVO de 1TB
+              proporciona un rendimiento sobresaliente gracias a la interfaz NVMe de Samsung 1. Si buscas una opción más
+              económica, el modelo Portable SSD T7 de 1TB es una excelente opción.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="../Static/img/DDR 4.jpg" class="card-img-top" alt="memoria RAM HyperX Fury DDR4">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="text-align: justify; color:rgb(255, 255, 255)">RAM HyperX Fury DDR4</h5>
+            <p class="card-text" style="color: rgb(255, 255, 255); text-align: justify">La memoria RAM HyperX Fury DDR4
+              es una excelente opción para aquellos que buscan un rendimiento superior y una experiencia de usuario
+              fluida. Con velocidades de hasta 3466 MHz 1, esta memoria RAM te brinda un rendimiento sobresaliente y una
+              capacidad de respuesta rápida. Además, su diseño elegante y de bajo perfil lo hace fácil de instalar y
+              transportar. El modelo de 8GB de capacidad es una excelente opción para aquellos que buscan una
+              actualización rentable y de gran rendimiento
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div id="final-container"></div>
+      <script>
+        fetch('fin.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('final-container').innerHTML = data);
+      </script>
+      <div>
+        <hr>
+        <h4 style="color: white; text-align: center;">
+          ¡Puedes enviarnos tus sugerencias al correo TuTiendaVirtual@gmail.com!
+          <button id="scrollToTop" class="btn btn-primary ms-3" style="display: inline-block;">Ir Arriba</button>
+        </h4>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <script src="../Static/js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>

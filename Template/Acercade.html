@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../Static/css/styles.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <script>
+        fetch('Navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container">
+        <div class="row">
+            <div style="color: white; background-color: transparent;">
+                <div class="col-lg-12 text-center">
+                    <br>
+                    <h1><b><i>Conoce sobre nosotros</i></b></h1>
+                    <hr style="border: none; border-top: 1px solid white;">
+                    <br />
+                    <!-- Carrusel que contiene la historia mision y vision -->
+                    <div class="carousel-container">
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                            rel="stylesheet"
+                            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                            crossorigin="anonymous">
+                        <link rel="stylesheet"
+                            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../Static/img/fondoelegante.png" class="d-block w-100"
+                                        style=" object-fit: cover" alt="...">
+                                    <div class="carousel-text">
+                                        <h3>Historia</h3>
+                                        <p>Hace varios años, esta empresa fue creada por dos estudiantes de ingeniería
+                                            informática que compartían la pasión por la tecnología y
+                                            el emprendimiento. Un día, decidieron crear una página web para vender
+                                            dispositivos móviles, componentes de computadoras y
+                                            otros productos electrónicos a precios accesibles y con garantía de calidad.
+                                            Así nació "Los virtuales", una pequeña
+                                            empresa que empezó con un capital de 10,000 dólares y una oficina en el
+                                            garaje de la casa de los estudiantes.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Static/img/fondo floral.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-text">
+                                        <h3>Misión</h3>
+                                        <p>Somos una empresa dedicada a la venta de dispositivos móviles, componentes de
+                                            computadoras y otros productos
+                                            electrónicos de alta calidad y a precios competitivos. Brindamos un servicio
+                                            de excelencia, con asesoría personalizada,
+                                            envíos rápidos y seguros, y garantía de satisfacción. Buscamos satisfacer
+                                            las necesidades y expectativas de nuestros clientes,
+                                            ofreciéndoles soluciones innovadoras y adaptadas a sus requerimientos.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Static/img/Pared.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-text">
+                                        <h3>Vision</h3>
+                                        <p>Ser la empresa líder en el mercado de la tecnología en El Salvador y en la
+                                            región, reconocida por su calidad,
+                                            confianza y responsabilidad. Ser una referencia en el sector, por nuestra
+                                            capacidad de innovar, anticiparnos y
+                                            adaptarnos a los cambios y tendencias del mercado. Ser una empresa
+                                            socialmente responsable, comprometida con el
+                                            desarrollo sostenible y el bienestar de nuestra comunidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <hr style="border: none; border-top: 1px solid white;">
+                </div>
+
+
+                <!-- Seccion de objetivos de la empresa -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6" style="text-align: center; margin-top: 120px;">
+                            <h1><b>Nuestros Objetivos</b></h1>
+                        </div>
+                        <div class="col-sm-6" style="text-align:start;">
+                            <p>* Ampliar el mercado a nivel nacional e internacional, estableciendo alianzas
+                                estratégicas con proveedores, distribuidores y clientes potenciales, y participando
+                                en ferias, exposiciones y eventos del sector. <br>
+                                * Desarrollar nuevos productos y servicios, basados en la investigación, el análisis
+                                y la anticipación de las necesidades y tendencias del mercado, y utilizando las
+                                últimas tecnologías disponibles. <br>
+                                * Fortalecer el capital humano de la empresa, capacitando, motivando y recompensando
+                                al personal, y promoviendo un clima laboral positivo, colaborativo y creativo. <br>
+                                * Contribuir al desarrollo sostenible y al bienestar de la comunidad, adoptando
+                                prácticas ambientales responsables, apoyando iniciativas sociales y culturales, y
+                                generando empleo y riqueza. <br>
+                                * Mejorar la calidad del servicio al cliente, reduciendo el tiempo de respuesta, el
+                                número de reclamos y el índice de devoluciones, y aumentando la satisfacción y la
+                                confianza de los clientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seccion de Ubicacon -->
+                <hr style="border: none; border-top: 1px solid white;">
+                <h1 style="text-align: center; margin-top: 20px"><b>Ubicacion.</b></h1>
+                <h4 style="text-align: center; margin-top: 20px">Avenida Fajardo a un costado de parqueo municipal,
+                    Chalatenango</h4>
+                <br>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="../Static/img/Ubicacion.png" alt="ubicacion" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div id="final-container"></div>
+        <div>
+            <hr>
+            <h4 style="color: white; text-align: center;">
+                ¡Puedes enviarnos tus sugerencias al correo TuTiendaVirtual@gmail.com!
+                <button id="scrollToTop" class="btn btn-primary ms-3" style="display: inline-block;">Ir Arriba</button>
+            </h4>
+        </div>
+    </div>
+    <br>
+
+    <script src="../Static/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

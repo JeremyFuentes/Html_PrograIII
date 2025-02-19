@@ -1,0 +1,9 @@
+Si no quiere ser rickrrolleado no toque el simbolo de Youtube
+Para filtrar productos se asigna una categoria a cada producto dentro del contenedor para luego mostrarlos
+El carrino no funciona 
+Y donde dice nombre de usuario le queria poner un inicio de Secion y que apareciera el nombre de la persona pero no ubo tiempo 
+El boton de ver mas y añadir al carrito no hacen absolutamente nada de momento 
+En Acerca de Solo encontrara info de la empresa
+En contacto el formulario tiene unas validaciones sencillas y no aguarda los datos ingresados de momento ya que no esta conectado a una Data Base
+Cree un Html para almacenar la navbar y solamente la mando a llamar en el inico de cada html ademas agregue un final con la informacion de contacto 
+Por la implementacion del boton de regresar arriba me toco escribir esa parte de codigo individualmente en cada html  

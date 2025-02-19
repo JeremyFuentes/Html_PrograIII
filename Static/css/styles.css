@@ -1,0 +1,277 @@
+/* Color de fondo */
+body {
+    background: linear-gradient(rgb(146, 20, 168), rgb(135, 178, 235));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 70px;
+}
+
+#navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.filtro-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.filtro-opciones {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: row;  /* Alinea los botones en una fila horizontal */
+    gap: 10px;            /* Espacio entre botones */
+    margin-top: 10px;
+}
+
+.oculto {
+    display: none;        /* Oculta el contenedor al inicio */
+}
+
+/* Encabezado */
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+/* Lista personalizada */
+ul {
+    list-style-type: square;
+    color: #008080;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Imagen con borde y sombra */
+img {
+    width: 600px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s ease;
+}
+
+.img-excluida {
+    all: unset !important;
+    width: 50px;
+    ;
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Enlace */
+a {
+    color: #ff4500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info h3 {
+    text-align: center;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    border-top: 1px solid white;
+    opacity: 0.5;
+    /* Reduce la opacidad de la línea */
+    margin: 20px 0;
+    /* Margen superior e inferior */
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+
+.rounded-row {
+    border-radius: 10px;
+}
+
+th {
+    background-color: transparent;
+}
+
+.carousel-container {
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 70vh;
+}
+
+.carousel-item .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+@media (max-width: 576px) {
+    .carousel-item .carousel-text {
+        padding: 10px;
+    }
+
+    .carousel-item .carousel-text h3 {
+        font-size: 1rem;
+    }
+
+    .carousel-item .carousel-text p {
+        font-size: 0.8rem;
+    }
+}
+
+.custom-font {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.color-line {
+    border: none;
+    border-top: 2px solid white;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.imagen-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-custom {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-container img {
+    width: 50px;
+}
+
+.icon-image {
+    width: 50px;
+    border: none;
+    box-shadow: none;
+}
+
+.bordered-image {
+    width: 600px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#scrollToTop {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.search-icon {
+    margin-top: 3px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search-input {
+    display: none;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.search-container.active .search-input {
+    display: inline-block;
+    width: 200px;
+}

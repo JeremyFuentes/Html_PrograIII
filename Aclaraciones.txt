@@ -1,7 +1,7 @@
 Si no quiere ser rickrrolleado no toque el simbolo de Youtube
 Para filtrar productos se asigna una categoria a cada producto dentro del contenedor para luego mostrarlos
 El carrino no funciona 
-Y donde dice nombre de usuario le queria poner un inicio de Secion y que apareciera el nombre de la persona pero no ubo tiempo 
+Y donde dice nombre de usuario le queria poner un inicio de Secion y que apareciera el nombre de la persona pero no hubo tiempo
 El boton de ver mas y añadir al carrito no hacen absolutamente nada de momento 
 En Acerca de Solo encontrara info de la empresa
 En contacto el formulario tiene unas validaciones sencillas y no aguarda los datos ingresados de momento ya que no esta conectado a una Data Base

@@ -45,6 +45,12 @@ body {
     display: none;        /* Oculta el contenedor al inicio */
 }
 
+@media (max-width: 768px) {
+    .filtros{
+        flex-direction: column;
+    }
+}
+
 /* Encabezado */
 h1 {
     color: #ffffff;
